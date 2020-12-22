@@ -16,9 +16,13 @@ setInterval(function () {
     hour12: false
   })}:${timeNow.toLocaleString("en-US", {
     minute: "2-digit"
-  })}:${timeNow.toLocaleString("en-US", {
-    second: "2-digit"
-  })}`;
+  })}:${addZero(
+    Number(
+      timeNow.toLocaleString("en-US", {
+        second: "2-digit"
+      })
+    )
+  )}`;
   document.querySelector(".now p").innerHTML = timeNowReadable;
 
   let daysElapsed = Math.floor(interval / 86400);
