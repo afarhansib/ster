@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  min-height: -webkit-fill-available;
+}
+
+.bg .circle {
+  position: absolute;
+  left: 10rem;
+  top: 3rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  background: rgba(48, 207, 242, 0.3);
+  filter: blur(30px);
+}
+
+.bg .left {
+  position: absolute;
+  top: 14rem;
+  left: -4rem;
+  width: 10rem;
+  height: 20rem;
+  background: rgba(239, 131, 31, 0.3);
+  filter: blur(30px);
+  border-radius: 10px;
+  transform: rotate(-21.09deg);
+}
+
+.bg .right {
+  position: absolute;
+  bottom: 0rem;
+  right: -4rem;
+  width: 10rem;
+  height: 20rem;
+  background: rgba(48, 207, 242, 0.3);
+  filter: blur(30px);
+  border-radius: 10px;
+  transform: rotate(-21.09deg);
+}
+
+.content {
+  position: relative;
+}
+
+header {
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 20pt;
+}
+
+header h1 span {
+  color: #32b1cd;
+  position: relative;
+}
+
+header h1 span::after {
+  content: "";
+  width: 3.6rem;
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 0.25rem;
+  background: #252525;
+}
+
+.timer {
+  background: rgba(255, 255, 255, 0.19);
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 10rem;
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.timer > * {
+  font-size: 30pt;
+  margin: 2rem 0;
+}
+
+.timer > * span {
+  font-size: 12pt;
+  display: block;
+  color: #ef8320;
+}
+
+footer {
+  padding: 2rem;
+  font-size: small;
+}
+
+footer .last {
+  margin-bottom: 0.5rem;
+}
+
+footer .last h3 {
+  color: #32b1cd;
+}
+
+footer .now h3 {
+  color: #ef8320;
+}
