@@ -1,4 +1,4 @@
-const lastTime = 1608315681000;
+const lastTime = 1609171523000;
 
 setInterval(function () {
   let timeNow = new Date();
